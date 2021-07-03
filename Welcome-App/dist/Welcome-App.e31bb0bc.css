@@ -1,0 +1,42 @@
+h2 {
+    color: rgb(27, 51, 65);
+}
+
+.rt {
+    width: 400px;
+    margin: 20% auto;
+    background-color: #f5f5f5;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px #dcf3fc;
+}
+
+.rt:hover{
+    box-shadow: 10px 5px 2px #dcf3fc;
+}
+
+.in-btn{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+input{
+    flex: 2;
+}
+
+button{
+    flex: 1;
+    margin-left: 16px;
+    border-radius: 10px;
+    border: 1px solid #5c666a;
+}
+
+button:hover:enabled{
+    color: whitesmoke;
+    background-color: #427297;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+/*# sourceMappingURL=/Welcome-App.e31bb0bc.css.map */
