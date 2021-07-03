@@ -1,5 +1,7 @@
 import React from 'react';
 import './style.css'
+import Title from './components/Title';
+import Greeting from './components/Greeting';
 
 class App extends React.Component {
 
@@ -25,8 +27,8 @@ class App extends React.Component {
         return ( 
             <>
                 <div className="rt">
-                    <h2>Welcome to the jungle</h2>
-                    <p>Hi there, <strong>{this.state.username}</strong>!</p>
+                   <Title title="Welcome to React World" />
+                    <Greeting username={this.state.username} />
                     <p>Tell me what is your name, so we make conversation.</p>
                     <div className="in-btn">
                         <input type="text" value={this.state.name} onChange={this.handleValueChange} />

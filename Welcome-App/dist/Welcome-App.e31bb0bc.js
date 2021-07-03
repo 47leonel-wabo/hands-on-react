@@ -29638,7 +29638,43 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Title.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Title = function Title(props) {
+  return /*#__PURE__*/_react.default.createElement("h2", null, props.title);
+};
+
+var _default = Title;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"components/Greeting.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Greeting = function Greeting(props) {
+  return /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", /*#__PURE__*/_react.default.createElement("strong", null, props.username), "!");
+};
+
+var _default = Greeting;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29649,6 +29685,10 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 require("./style.css");
+
+var _Title = _interopRequireDefault(require("./components/Title"));
+
+var _Greeting = _interopRequireDefault(require("./components/Greeting"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29714,7 +29754,11 @@ var App = /*#__PURE__*/function (_React$Component) {
       // const [username] = this.state
       return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
         className: "rt"
-      }, /*#__PURE__*/_react.default.createElement("h2", null, "Welcome to the jungle"), /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", /*#__PURE__*/_react.default.createElement("strong", null, this.state.username), "!"), /*#__PURE__*/_react.default.createElement("p", null, "Tell me what is your name, so we make conversation."), /*#__PURE__*/_react.default.createElement("div", {
+      }, /*#__PURE__*/_react.default.createElement(_Title.default, {
+        title: "Welcome to React World"
+      }), /*#__PURE__*/_react.default.createElement(_Greeting.default, {
+        username: this.state.username
+      }), /*#__PURE__*/_react.default.createElement("p", null, "Tell me what is your name, so we make conversation."), /*#__PURE__*/_react.default.createElement("div", {
         className: "in-btn"
       }, /*#__PURE__*/_react.default.createElement("input", {
         type: "text",
@@ -29732,7 +29776,7 @@ var App = /*#__PURE__*/function (_React$Component) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./style.css":"style.css"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./style.css":"style.css","./components/Title":"components/Title.jsx","./components/Greeting":"components/Greeting.jsx"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
