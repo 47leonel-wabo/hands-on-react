@@ -29714,7 +29714,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       // const [username] = this.state
       return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
         className: "rt"
-      }, /*#__PURE__*/_react.default.createElement("h2", null, "Welcome to the jungle"), /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", /*#__PURE__*/_react.default.createElement("strong", null, this.state.username), "!"), /*#__PURE__*/_react.default.createElement("p", null, "This is a simple app made to greet you."), /*#__PURE__*/_react.default.createElement("div", {
+      }, /*#__PURE__*/_react.default.createElement("h2", null, "Welcome to the jungle"), /*#__PURE__*/_react.default.createElement("p", null, "Hi there, ", /*#__PURE__*/_react.default.createElement("strong", null, this.state.username), "!"), /*#__PURE__*/_react.default.createElement("p", null, "Tell me what is your name, so we make conversation."), /*#__PURE__*/_react.default.createElement("div", {
         className: "in-btn"
       }, /*#__PURE__*/_react.default.createElement("input", {
         type: "text",
