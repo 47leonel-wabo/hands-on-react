@@ -29,7 +29,7 @@ class App extends React.Component {
                 <div className="rt">
                    <Title title="Welcome to React World" />
                     <Greeting username={this.state.username} />
-                    <p>Tell me what is your name, so we make conversation.</p>
+                    <p className="conversation">Tell me what is your name, so we make conversation.</p>
                     <div className="in-btn">
                         <input type="text" value={this.state.name} onChange={this.handleValueChange} />
                         <button onClick={this.handleUpdate} disabled={!this.state.name}>Update name</button>

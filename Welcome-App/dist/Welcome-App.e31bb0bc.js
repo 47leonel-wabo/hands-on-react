@@ -29758,7 +29758,9 @@ var App = /*#__PURE__*/function (_React$Component) {
         title: "Welcome to React World"
       }), /*#__PURE__*/_react.default.createElement(_Greeting.default, {
         username: this.state.username
-      }), /*#__PURE__*/_react.default.createElement("p", null, "Tell me what is your name, so we make conversation."), /*#__PURE__*/_react.default.createElement("div", {
+      }), /*#__PURE__*/_react.default.createElement("p", {
+        className: "conversation"
+      }, "Tell me what is your name, so we make conversation."), /*#__PURE__*/_react.default.createElement("div", {
         className: "in-btn"
       }, /*#__PURE__*/_react.default.createElement("input", {
         type: "text",
