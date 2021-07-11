@@ -38,7 +38,7 @@ function App() {
           />
         </div>
         <div className="column">
-          <div className="column is-multiline">
+          <div className="columns is-multiline">
             {isLoading && (
               <progress className="progress is-medium is-link" max="100">
                 68%

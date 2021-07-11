@@ -1,22 +1,26 @@
 import axios from 'axios'
 
-const API_URL = process.env.REACT_APP_DOG_API_URL
-const API_KEY = process.env.REACT_APP_DOG_API_KEY
+// const API_URL = process.env.REACT_APP_DOG_API_URL
+const API_URL = 'https://api.thedogapi.com/v1/'
+const API_KEY = 'ba39ed54-d7bb-4aac-a680-c1f5d12d7d82'
+// const API_KEY = process.env.REACT_APP_DOG_API_KEY
 
 /*
- * endpoint: represents the endpoint to call
+ * url: represents the endpoint to call
  * params: represents an extra parameters
  */
-const callApi = async (endpoint, params = null) => {
+const callApi = async (url, params = null) => {
   const requestConfiguration = {
     baseURL: API_URL,
     header: {
       'x-api-key': API_KEY,
     },
-    endpoint,
+    url,
   }
 
-  if (params) requestConfiguration.params = params
+  if (params) {
+    requestConfiguration.params = params
+  }
 
   try {
     return await axios(requestConfiguration)
@@ -26,13 +30,13 @@ const callApi = async (endpoint, params = null) => {
 }
 
 export const fetchBreeds = async (page, count = 10) => {
-  const breeds = await callApi('breeds', {
+  let dogBreeds = await callApi('breeds', {
     limit: count,
     page,
   })
   return {
-    breeds: breeds.data,
-    totalBreeds: breeds.headers['pagination-count'],
+    breeds: dogBreeds.data,
+    totalBreeds: dogBreeds.headers['pagination-count'],
   }
 }
 

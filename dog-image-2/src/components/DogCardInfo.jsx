@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({imgUrl, picId}) => {
+const DogCardInfo = ({imgUrl, picId}) => {
     return (
         <div className="card">
             <div className="card-image">
@@ -16,3 +16,5 @@ export default ({imgUrl, picId}) => {
         </div>
     )
 }
+
+export default DogCardInfo

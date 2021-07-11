@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {fetchBreeds} from '../lib/api'
 
-export default ({dispatchBreedChange}) => {
+const BreedsList = ({dispatchBreedChange}) => {
 
     const [value, setValue] = useState('')
     const [breeds, setBreeds] = useState([])
     const [isLoading, setIsLoading] = useState(false)
-    const [currentPage, setCurrentPage] = useState(1)
+    const [currentPage, setCurrentPage] = useState(0)
     const [totalPages, setTotalPages] = useState(0)
 
     const handleChange = evt => {
@@ -72,7 +72,7 @@ export default ({dispatchBreedChange}) => {
                         <a
                         className="pagination-previous" 
                         onClick={() => handlePageClick(currentPage + 1)}
-                        disabled={currentPage + 1 >= totalPagess}
+                        disabled={currentPage + 1 >= totalPages}
                         >
                             Next
                         </a>
@@ -82,3 +82,5 @@ export default ({dispatchBreedChange}) => {
         </>
     )
 }
+
+export default BreedsList
