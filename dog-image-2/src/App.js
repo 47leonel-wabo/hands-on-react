@@ -23,7 +23,7 @@ function App() {
   }, [selectedBreedId])
 
   return (
-    <div className="container">
+    <div className="container is-mobile">
       <header className="section has-text-centered">
         <h1 className="title is-size-3 has-text-primary">
           Search for Dog pictures
