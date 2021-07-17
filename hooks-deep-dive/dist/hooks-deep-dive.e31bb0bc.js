@@ -29705,6 +29705,8 @@ var Layout = function Layout() {
     href: "#l"
   }, "About"))), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h1", {
     className: "is-size-3"
+  }, "UseContext"), /*#__PURE__*/_react.default.createElement("h1", {
+    className: "is-size-4"
   }, "Welcome to my fantastic blog"), /*#__PURE__*/_react.default.createElement("p", {
     style: {
       margin: '0.5rem 0'

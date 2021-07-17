@@ -50,7 +50,8 @@ const Layout = () => {
                 </nav>
             </div>
             <article>
-                <h1 className="is-size-3">Welcome to my fantastic blog</h1>
+                <h1 className="is-size-3">UseContext</h1>
+                <h1 className="is-size-4">Welcome to my fantastic blog</h1>
                 <p style={{margin: '0.5rem 0'}}>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, similique fugiat!
                     Consequuntur earum eos, ipsam veritatis ratione officia maxime illo. Lorem ipsum dolor 
