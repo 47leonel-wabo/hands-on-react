@@ -29638,7 +29638,104 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/ContextExple.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var themeStyles = {
+  light: {
+    background: "#fff",
+    color: "#333"
+  },
+  dark: {
+    background: "#0d1117",
+    color: "#cfc8d7"
+  }
+};
+var layout = {
+  left: "row",
+  right: "row-reverse"
+}; // Context creation
+
+var ThemeContext = _react.default.createContext(_objectSpread(_objectSpread({}, themeStyles.light), {}, {
+  direction: layout.left
+})); // The consumer component
+
+
+var Layout = function Layout() {
+  // Get context
+  var theme = _react.default.useContext(ThemeContext);
+
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
+    className: "section",
+    style: {
+      display: 'flex',
+      color: theme.color,
+      backgroundColor: theme.background,
+      flexDirection: theme.direction
+    }
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "sidebar",
+    style: {
+      width: '25%',
+      margin: '0 1.5rem',
+      display: 'block',
+      padding: '2rem',
+      borderRadius: '5px'
+    }
+  }, /*#__PURE__*/_react.default.createElement("nav", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#l"
+  }, "Home"), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#l"
+  }, "Articles"), /*#__PURE__*/_react.default.createElement("a", {
+    href: "#l"
+  }, "About"))), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "is-size-3"
+  }, "Welcome to my fantastic blog"), /*#__PURE__*/_react.default.createElement("p", {
+    style: {
+      margin: '0.5rem 0'
+    }
+  }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, similique fugiat! Consequuntur earum eos, ipsam veritatis ratione officia maxime illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sapiente optio voluptatem nulla similique quod esse maiores voluptate consequuntur vel!"), /*#__PURE__*/_react.default.createElement("p", {
+    style: {
+      margin: '0.5rem 0'
+    }
+  }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente numquam repudiandae suscipit labore facere pariatur vitae perspiciatis dolores possimus ipsam eius vel quasi, eveniet a sunt aut porro repellat rerum est amet. Provident ipsam error rerum et excepturi, quia dolorum autem reiciendis odit, nobis sit labore nisi non quidem eaque?"), /*#__PURE__*/_react.default.createElement("p", {
+    style: {
+      margin: '0.5rem 0'
+    }
+  }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente numquam repudiandae suscipit labore facere pariatur vitae perspiciatis dolores possimus ipsam eius vel quasi, eveniet a sunt aut porro repellat rerum est amet. Provident ipsam error rerum et excepturi, quia dolorum autem reiciendis odit, nobis sit labore nisi non quidem eaque?"), /*#__PURE__*/_react.default.createElement("p", {
+    style: {
+      margin: '0.5rem 0'
+    }
+  }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente numquam repudiandae suscipit labore facere pariatur vitae perspiciatis dolores possimus ipsam eius vel quasi, eveniet a sunt aut porro repellat rerum est amet. Provident ipsam error rerum et excepturi, quia dolorum autem reiciendis odit, nobis sit labore nisi non quidem eaque?"))));
+}; // by changing themeStyle from 'light' to 'dark' or vice versa, change this component
+// look and feel
+
+
+var _default = function _default() {
+  return /*#__PURE__*/_react.default.createElement(ThemeContext.Provider, {
+    value: _objectSpread(_objectSpread({}, themeStyles.light), {}, {
+      direction: layout.right
+    })
+  }, /*#__PURE__*/_react.default.createElement(Layout, null));
+};
+
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29650,23 +29747,22 @@ var _react = _interopRequireDefault(require("react"));
 
 require("./style.css");
 
+var _ContextExple = _interopRequireDefault(require("./components/ContextExple"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import CallBackExple from './CallBackExple'
-// import ContextExple from './ContextExple'
 // import RefExple from './RefExple'
 // import MemoExple from './MemoExple'
 function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    class: "container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    class: "notification"
-  }, "This container is ", /*#__PURE__*/_react.default.createElement("strong", null, "centered"), " on desktop."));
+    class: "container box"
+  }, /*#__PURE__*/_react.default.createElement(_ContextExple.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./style.css":"style.css"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./style.css":"style.css","./components/ContextExple":"components/ContextExple.jsx"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -29706,7 +29802,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41559" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38825" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

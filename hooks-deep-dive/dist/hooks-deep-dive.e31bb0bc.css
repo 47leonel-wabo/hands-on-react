@@ -1,2 +1,11 @@
+.sidebar a {
+  display: block;
+  /* color: inherit; */
+}
+
+.sidebar {
+  border: 1px solid #f5f5f57a;
+}
+
 
 /*# sourceMappingURL=/hooks-deep-dive.e31bb0bc.css.map */
