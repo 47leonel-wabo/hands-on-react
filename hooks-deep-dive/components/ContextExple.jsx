@@ -79,8 +79,8 @@ const Layout = () => {
         </section>
     </>
 }
-// by changing themeStyle from 'light' to 'dark' or vice versa, change this component
-// look and feel
+// by changing themeStyle from 'light' to 'dark' or vice versa, as well as 'left' and 'right' to
+// change this component look and feel
 export default () => (
     <ThemeContext.Provider value={{...themeStyles.light, direction: layout.right}}>
         <Layout />

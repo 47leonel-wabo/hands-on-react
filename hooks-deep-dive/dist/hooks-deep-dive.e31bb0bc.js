@@ -29722,8 +29722,8 @@ var Layout = function Layout() {
       margin: '0.5rem 0'
     }
   }, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente numquam repudiandae suscipit labore facere pariatur vitae perspiciatis dolores possimus ipsam eius vel quasi, eveniet a sunt aut porro repellat rerum est amet. Provident ipsam error rerum et excepturi, quia dolorum autem reiciendis odit, nobis sit labore nisi non quidem eaque?"))));
-}; // by changing themeStyle from 'light' to 'dark' or vice versa, change this component
-// look and feel
+}; // by changing themeStyle from 'light' to 'dark' or vice versa, as well as 'left' and 'right' to
+// change this component look and feel
 
 
 var _default = function _default() {
