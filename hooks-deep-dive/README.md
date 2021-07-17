@@ -14,5 +14,15 @@ Test project created using [Parcel JS](https://parceljs.org/) as it is just for 
 
 ### `index.js`
 
+Link our logic to the ui aka html.
+`
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'
+
+ReactDOM.render(<App />, document.getElementById('app'))
+`
 
 ### `App.js`
+
+Pure react component (controlled, function, or class).
