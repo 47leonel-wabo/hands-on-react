@@ -1,0 +1,17 @@
+{
+  "name": "hooks-deep-dive",
+  "version": "1.0.0",
+  "description": "Test project created using [Parcel JS](https://parceljs.org/) as it is just for learning purpose.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
