@@ -1,24 +1,32 @@
 {
- "fields": [
-   {
-    "label": "Name",
-    "type": "input",
-    "inputName": "name",
-    "placeholder": "Anna Smith",
-    "helpText": "Supply your first and last names",
-    "required": true
-  },
-  {
-   "label": "Password",
-   "type": "password",
-   "inputName": "password",
-   "required": true
- },
- {
-  "label": "Phone number",
-  "type": "text",
-  "inputName": "phone",
-  "placeholder": "+237 60 12 3 ...",
-}
+  "fields": [
+    {
+      "label": "Name",
+      "type": "input",
+      "fieldName": "name",
+      "placeholder": "Anna Smith",
+      "helpText": "Supply your first and last names",
+      "required": true
+    },
+    {
+      "label": "Password",
+      "type": "password",
+      "fieldName": "password",
+      "required": true
+    },
+    {
+      "label": "Phone number",
+      "type": "text",
+      "fieldName": "phone",
+      "placeholder": "+237 60 12 3 ..."
+    },
+    {
+      "label": "Message",
+      "type": "text",
+      "fieldName": "message",
+      "placeholder": "Please enter a message",
+      "helpText": "enter your message",
+      "required": true
+    }
 ]
 }
