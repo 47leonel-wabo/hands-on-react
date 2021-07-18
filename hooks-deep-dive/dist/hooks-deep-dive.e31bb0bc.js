@@ -29737,6 +29737,219 @@ var _default = function _default() {
 };
 
 exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"components/RefExple.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var ModalBox = function ModalBox(_ref) {
+  var _ref$isOpen = _ref.isOpen,
+      isOpen = _ref$isOpen === void 0 ? false : _ref$isOpen,
+      handleModalClick = _ref.handleModalClick;
+  return (
+    /*#__PURE__*/
+    // This modal component will show when (isOpen === is-active)
+    // <div className={`modal is-clipped  ${props.isOpen} ? 'is-active' : ''`}>
+    // <div className={`${isOpen} ? 'modal' : 'modal'`}>
+    _react.default.createElement("div", {
+      className: isOpen ? 'modal is-active' : 'modal'
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "modal-background"
+    }), /*#__PURE__*/_react.default.createElement("div", {
+      className: "modal-card"
+    }, /*#__PURE__*/_react.default.createElement("header", {
+      className: "modal-card-head"
+    }, /*#__PURE__*/_react.default.createElement("p", {
+      className: "modal-card-title"
+    }, "Modal using ref"), /*#__PURE__*/_react.default.createElement("button", {
+      className: "delete",
+      "aria-label": "close"
+    })), /*#__PURE__*/_react.default.createElement("section", {
+      className: "modal-card-body"
+    }, /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dolorum enim tempore cum et quaerat voluptatibus perspiciatis iusto officiis atque! dolorum enim tempore cum et quaerat voluptatibus perspiciatis iusto officiis atque!")), /*#__PURE__*/_react.default.createElement("footer", {
+      className: "modal-card-foot"
+    }, /*#__PURE__*/_react.default.createElement("button", {
+      className: "button is-success",
+      onClick: handleModalClick
+    }, "Save changes"), /*#__PURE__*/_react.default.createElement("button", {
+      className: "button",
+      onClick: handleModalClick
+    }, "Cancel"))))
+  );
+};
+
+var _default = function _default() {
+  var _useState = (0, _react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      isModalOpen = _useState2[0],
+      setIsModalOpen = _useState2[1];
+
+  var myRefs = (0, _react.useRef)(null);
+
+  var onModalClick = function onModalClick() {
+    setIsModalOpen(false);
+    myRefs.current.focus();
+  };
+
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("section", {
+    className: "columns is-centered"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "column is-4"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "field"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "label"
+  }, "Name"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "control"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    onChange: function onChange(evt) {
+      return console.log(evt.target.value);
+    },
+    className: "input",
+    type: "text",
+    placeholder: "Text input"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "field"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "label"
+  }, "Username"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "control has-icons-left has-icons-right"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    onChange: function onChange(evt) {
+      return console.log(evt.target.value);
+    },
+    className: "input is-success",
+    type: "text",
+    placeholder: "Text input",
+    value: "bulma"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon is-small is-left"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fas fa-user"
+  })), /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon is-small is-right"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fas fa-check"
+  }))), /*#__PURE__*/_react.default.createElement("p", {
+    className: "help is-success"
+  }, "This username is available")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "field"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "label"
+  }, "Email"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "control has-icons-left has-icons-right"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    onChange: function onChange(evt) {
+      return console.log(evt.target.value);
+    },
+    className: "input is-danger",
+    type: "email",
+    placeholder: "Email input",
+    value: "hello@"
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon is-small is-left"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fas fa-envelope"
+  })), /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon is-small is-right"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fas fa-exclamation-triangle"
+  }))), /*#__PURE__*/_react.default.createElement("p", {
+    className: "help is-danger"
+  }, "This email is invalid")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "field"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "label"
+  }, "Subject"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "control"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "select"
+  }, /*#__PURE__*/_react.default.createElement("select", null, /*#__PURE__*/_react.default.createElement("option", null, "Select dropdown"), /*#__PURE__*/_react.default.createElement("option", null, "With options"))))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "field"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "label"
+  }, "Message"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "control"
+  }, /*#__PURE__*/_react.default.createElement("textarea", {
+    className: "textarea",
+    placeholder: "Textarea",
+    ref: myRefs
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "field"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "control"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "checkbox"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    onChange: function onChange(evt) {
+      return console.log(evt.target.value);
+    },
+    type: "checkbox"
+  }), "I agree to the ", /*#__PURE__*/_react.default.createElement("a", {
+    href: "#"
+  }, "terms and conditions")))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "field"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "control"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "radio"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    onChange: function onChange(evt) {
+      return console.log(evt.target.value);
+    },
+    type: "radio",
+    name: "question"
+  }), "Yes"), /*#__PURE__*/_react.default.createElement("label", {
+    className: "radio"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    onChange: function onChange(evt) {
+      return console.log(evt.target.value);
+    },
+    type: "radio",
+    name: "question"
+  }), "No"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "field is-grouped"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "control"
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "button is-link"
+  }, "Submit")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "control"
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    onClick: function onClick() {
+      return setIsModalOpen(true);
+    },
+    className: "button is-link is-light"
+  }, "Show modal"))), /*#__PURE__*/_react.default.createElement(ModalBox, {
+    isOpen: isModalOpen,
+    handleModalClick: onModalClick
+  }))));
+};
+
+exports.default = _default;
 },{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
@@ -29751,6 +29964,8 @@ require("./style.css");
 
 var _ContextExple = _interopRequireDefault(require("./components/ContextExple"));
 
+var _RefExple = _interopRequireDefault(require("./components/RefExple"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import CallBackExple from './CallBackExple'
@@ -29758,13 +29973,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import MemoExple from './MemoExple'
 function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    class: "container box"
-  }, /*#__PURE__*/_react.default.createElement(_ContextExple.default, null));
+    className: "container is-mobile"
+  }, /*#__PURE__*/_react.default.createElement(_RefExple.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./style.css":"style.css","./components/ContextExple":"components/ContextExple.jsx"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./style.css":"style.css","./components/ContextExple":"components/ContextExple.jsx","./components/RefExple":"components/RefExple.jsx"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -29804,7 +30019,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38825" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41923" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

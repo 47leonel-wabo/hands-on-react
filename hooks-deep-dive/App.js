@@ -6,11 +6,13 @@ import ContextExple from './components/ContextExple'
 // import MemoExple from './MemoExple'
 
 import './style.css'
+import RefExple from './components/RefExple';
 
 function App(){
     return (
-        <div class="container box">
-            <ContextExple />
+        <div className="container is-mobile">
+            {/* <ContextExple /> */}
+            <RefExple />
         </div>)
 }
 
