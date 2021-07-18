@@ -29812,141 +29812,144 @@ var _default = function _default() {
     myRefs.current.focus();
   };
 
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/_react.default.createElement("section", {
-    className: "columns is-centered"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "column is-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "field"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    className: "label"
-  }, "Name"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "control"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    onChange: function onChange(evt) {
-      return console.log(evt.target.value);
-    },
-    className: "input",
-    type: "text",
-    placeholder: "Text input"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "field"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    className: "label"
-  }, "Username"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "control has-icons-left has-icons-right"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    onChange: function onChange(evt) {
-      return console.log(evt.target.value);
-    },
-    className: "input is-success",
-    type: "text",
-    placeholder: "Text input",
-    value: "bulma"
-  }), /*#__PURE__*/_react.default.createElement("span", {
-    className: "icon is-small is-left"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-user"
-  })), /*#__PURE__*/_react.default.createElement("span", {
-    className: "icon is-small is-right"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-check"
-  }))), /*#__PURE__*/_react.default.createElement("p", {
-    className: "help is-success"
-  }, "This username is available")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "field"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    className: "label"
-  }, "Email"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "control has-icons-left has-icons-right"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    onChange: function onChange(evt) {
-      return console.log(evt.target.value);
-    },
-    className: "input is-danger",
-    type: "email",
-    placeholder: "Email input",
-    value: "hello@"
-  }), /*#__PURE__*/_react.default.createElement("span", {
-    className: "icon is-small is-left"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-envelope"
-  })), /*#__PURE__*/_react.default.createElement("span", {
-    className: "icon is-small is-right"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-exclamation-triangle"
-  }))), /*#__PURE__*/_react.default.createElement("p", {
-    className: "help is-danger"
-  }, "This email is invalid")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "field"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    className: "label"
-  }, "Subject"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "control"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "select"
-  }, /*#__PURE__*/_react.default.createElement("select", null, /*#__PURE__*/_react.default.createElement("option", null, "Select dropdown"), /*#__PURE__*/_react.default.createElement("option", null, "With options"))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "field"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    className: "label"
-  }, "Message"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "control"
-  }, /*#__PURE__*/_react.default.createElement("textarea", {
-    className: "textarea",
-    placeholder: "Textarea",
-    ref: myRefs
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "field"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "control"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    className: "checkbox"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    onChange: function onChange(evt) {
-      return console.log(evt.target.value);
-    },
-    type: "checkbox"
-  }), "I agree to the ", /*#__PURE__*/_react.default.createElement("a", {
-    href: "#"
-  }, "terms and conditions")))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "field"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "control"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    className: "radio"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    onChange: function onChange(evt) {
-      return console.log(evt.target.value);
-    },
-    type: "radio",
-    name: "question"
-  }), "Yes"), /*#__PURE__*/_react.default.createElement("label", {
-    className: "radio"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    onChange: function onChange(evt) {
-      return console.log(evt.target.value);
-    },
-    type: "radio",
-    name: "question"
-  }), "No"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "field is-grouped"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "control"
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "button is-link"
-  }, "Submit")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "control"
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    onClick: function onClick() {
-      return setIsModalOpen(true);
-    },
-    className: "button is-link is-light"
-  }, "Show modal"))), /*#__PURE__*/_react.default.createElement(ModalBox, {
-    isOpen: isModalOpen,
-    handleModalClick: onModalClick
-  }))));
+  return (
+    /*#__PURE__*/
+    // <div className="container">
+    _react.default.createElement("section", {
+      className: "columns is-centered"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "column is-4"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "field"
+    }, /*#__PURE__*/_react.default.createElement("label", {
+      className: "label"
+    }, "Name"), /*#__PURE__*/_react.default.createElement("div", {
+      className: "control"
+    }, /*#__PURE__*/_react.default.createElement("input", {
+      onChange: function onChange(evt) {
+        return console.log(evt.target.value);
+      },
+      className: "input",
+      type: "text",
+      placeholder: "Text input"
+    }))), /*#__PURE__*/_react.default.createElement("div", {
+      className: "field"
+    }, /*#__PURE__*/_react.default.createElement("label", {
+      className: "label"
+    }, "Username"), /*#__PURE__*/_react.default.createElement("div", {
+      className: "control has-icons-left has-icons-right"
+    }, /*#__PURE__*/_react.default.createElement("input", {
+      onChange: function onChange(evt) {
+        return console.log(evt.target.value);
+      },
+      className: "input is-success",
+      type: "text",
+      placeholder: "Text input",
+      value: "bulma"
+    }), /*#__PURE__*/_react.default.createElement("span", {
+      className: "icon is-small is-left"
+    }, /*#__PURE__*/_react.default.createElement("i", {
+      className: "fas fa-user"
+    })), /*#__PURE__*/_react.default.createElement("span", {
+      className: "icon is-small is-right"
+    }, /*#__PURE__*/_react.default.createElement("i", {
+      className: "fas fa-check"
+    }))), /*#__PURE__*/_react.default.createElement("p", {
+      className: "help is-success"
+    }, "This username is available")), /*#__PURE__*/_react.default.createElement("div", {
+      className: "field"
+    }, /*#__PURE__*/_react.default.createElement("label", {
+      className: "label"
+    }, "Email"), /*#__PURE__*/_react.default.createElement("div", {
+      className: "control has-icons-left has-icons-right"
+    }, /*#__PURE__*/_react.default.createElement("input", {
+      onChange: function onChange(evt) {
+        return console.log(evt.target.value);
+      },
+      className: "input is-danger",
+      type: "email",
+      placeholder: "Email input",
+      value: "hello@"
+    }), /*#__PURE__*/_react.default.createElement("span", {
+      className: "icon is-small is-left"
+    }, /*#__PURE__*/_react.default.createElement("i", {
+      className: "fas fa-envelope"
+    })), /*#__PURE__*/_react.default.createElement("span", {
+      className: "icon is-small is-right"
+    }, /*#__PURE__*/_react.default.createElement("i", {
+      className: "fas fa-exclamation-triangle"
+    }))), /*#__PURE__*/_react.default.createElement("p", {
+      className: "help is-danger"
+    }, "This email is invalid")), /*#__PURE__*/_react.default.createElement("div", {
+      className: "field"
+    }, /*#__PURE__*/_react.default.createElement("label", {
+      className: "label"
+    }, "Subject"), /*#__PURE__*/_react.default.createElement("div", {
+      className: "control"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "select"
+    }, /*#__PURE__*/_react.default.createElement("select", null, /*#__PURE__*/_react.default.createElement("option", null, "Select dropdown"), /*#__PURE__*/_react.default.createElement("option", null, "With options"))))), /*#__PURE__*/_react.default.createElement("div", {
+      className: "field"
+    }, /*#__PURE__*/_react.default.createElement("label", {
+      className: "label"
+    }, "Message"), /*#__PURE__*/_react.default.createElement("div", {
+      className: "control"
+    }, /*#__PURE__*/_react.default.createElement("textarea", {
+      className: "textarea",
+      placeholder: "Textarea",
+      ref: myRefs
+    }))), /*#__PURE__*/_react.default.createElement("div", {
+      className: "field"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "control"
+    }, /*#__PURE__*/_react.default.createElement("label", {
+      className: "checkbox"
+    }, /*#__PURE__*/_react.default.createElement("input", {
+      onChange: function onChange(evt) {
+        return console.log(evt.target.value);
+      },
+      type: "checkbox"
+    }), "I agree to the ", /*#__PURE__*/_react.default.createElement("a", {
+      href: "#"
+    }, "terms and conditions")))), /*#__PURE__*/_react.default.createElement("div", {
+      className: "field"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "control"
+    }, /*#__PURE__*/_react.default.createElement("label", {
+      className: "radio"
+    }, /*#__PURE__*/_react.default.createElement("input", {
+      onChange: function onChange(evt) {
+        return console.log(evt.target.value);
+      },
+      type: "radio",
+      name: "question"
+    }), "Yes"), /*#__PURE__*/_react.default.createElement("label", {
+      className: "radio"
+    }, /*#__PURE__*/_react.default.createElement("input", {
+      onChange: function onChange(evt) {
+        return console.log(evt.target.value);
+      },
+      type: "radio",
+      name: "question"
+    }), "No"))), /*#__PURE__*/_react.default.createElement("div", {
+      className: "field is-grouped"
+    }, /*#__PURE__*/_react.default.createElement("div", {
+      className: "control"
+    }, /*#__PURE__*/_react.default.createElement("button", {
+      className: "button is-link"
+    }, "Submit")), /*#__PURE__*/_react.default.createElement("div", {
+      className: "control"
+    }, /*#__PURE__*/_react.default.createElement("button", {
+      onClick: function onClick() {
+        return setIsModalOpen(true);
+      },
+      className: "button is-link is-light"
+    }, "Show modal"))), /*#__PURE__*/_react.default.createElement(ModalBox, {
+      isOpen: isModalOpen,
+      handleModalClick: onModalClick
+    }))) // </div>
+
+  );
 };
 
 exports.default = _default;

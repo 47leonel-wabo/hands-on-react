@@ -37,7 +37,7 @@ export default () => {
     }
 
     return (
-        <div className="container">
+        // <div className="container">
         <section className="columns is-centered">
             <div className="column is-4">
             {/* 
@@ -136,6 +136,6 @@ export default () => {
             <ModalBox isOpen={isModalOpen} handleModalClick={onModalClick} />
             </div>
         </section>
-        </div>
+        // </div>
     )
 }
