@@ -3,11 +3,13 @@ import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Products from './components/products/Products';
 import Admin from './components/admin/Admin';
+import Nav from './components/common/Nav';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Nav/>
         <Routes>
           <Route path="/" element={<Products/>} />
           <Route path="/admin" element={<Admin/>} />
