@@ -27,7 +27,7 @@ const Nav = () => (
     <nav className={navStyle}>
         {/* NavLink provides an 'active' property by default, which Link doesn't */}
         <NavLink to="/" end>Products</NavLink>
-        <NavLink to="/admin">Admin</NavLink>
+        <NavLink to="/admin" activeStyle={{fontWeight: 'bold'}}>Admin</NavLink>
     </nav>
 )
 
