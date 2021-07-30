@@ -29953,6 +29953,24 @@ var _default = function _default() {
 };
 
 exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"components/MemoExple.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MemoExple = function MemoExple() {
+  return /*#__PURE__*/_react.default.createElement("h1", null, "Memo");
+};
+
+var _default = MemoExple;
+exports.default = _default;
 },{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
@@ -29969,6 +29987,8 @@ var _ContextExple = _interopRequireDefault(require("./components/ContextExple"))
 
 var _RefExple = _interopRequireDefault(require("./components/RefExple"));
 
+var _MemoExple = _interopRequireDefault(require("./components/MemoExple"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import CallBackExple from './CallBackExple'
@@ -29977,12 +29997,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "container is-mobile"
-  }, /*#__PURE__*/_react.default.createElement(_RefExple.default, null));
+  }, /*#__PURE__*/_react.default.createElement(_MemoExple.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./style.css":"style.css","./components/ContextExple":"components/ContextExple.jsx","./components/RefExple":"components/RefExple.jsx"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./style.css":"style.css","./components/ContextExple":"components/ContextExple.jsx","./components/RefExple":"components/RefExple.jsx","./components/MemoExple":"components/MemoExple.jsx"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -30022,7 +30042,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41923" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45187" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
